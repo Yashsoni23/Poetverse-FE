@@ -29,7 +29,10 @@ const darkTheme = createTheme({
             // ...  more colors
         },
         space: {},
-        fonts: {}
+        fonts: {},
+        breakpoints:{
+            maxSm: '640px',
+        }
     }
 });
 

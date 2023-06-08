@@ -8,55 +8,76 @@ const SignUp = (props: Props) => {
         <>
 
             <Card
+            
                 css={{
-                    background: '$blue300',
-                    // background: 'linear-gradient(90deg, rgba(217,208,28,1) 0%, rgba(242,165,40,1) 53%, rgba(255,123,0,1) 100%);',
+                    background: '$yellow300',
                     width: 'max-content',
                     padding: "$12",
                     dflex: 'column',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    gap: '$10',
-                }}>
-                <Text
-                h1
-                css={{
-                    textGradient: "45deg, $blue600 -20%, $blue900 50%",
+                    gap: '$14',
+                    shadow: '$lg',
+                    borderColor: '$accents1',
+                  
                 }}
+                borderWeight={'bold'}                >
+                <Text
+                    h1
+                    css={{
+                        textGradient: "45deg, $yellow600 -20%, $red600 100%",
+                    }}
                     weight="bold"
-                    size={40}
-                // color='white' weight={'bold'} size={'$3xl'} 
-
-                >Login</Text>
+                    size={20}
+                >Create New Account</Text>
                 <Input
+                    type='text'
                     shadow={true}
-                    width='25rem'
-                    labelLeft="Username"
-                    css={{ color: '$blue900', textEmphasisColor: 'primary', backgroundColor: '$blue100', lightingColor: 'AliceBlue', }}
+                    width='100%'
+                    color="primary"
+                    labelPlaceholder="Name"
+                    helperColor='success'
+                    clearable
+                    css={{ backgroundColor: '$neutralShadow'}}
+                    status='warning'
+                />
+                <Input
+                    type='email'
+                    shadow={true}
+                    width='100%'
+                    color="primary"
+                    labelPlaceholder="Email"
+                    helperColor='success'
+                    clearable
+                    css={{ backgroundColor: '$neutralShadow'}}
+                    status='warning'
                     className='font-bold '
-                    placeholder="xyz_12"
                 />
                 <Input.Password
-                    width='25rem'
-                    labelLeft="Password"
+                    width='100%'
+                    type='password'
                     shadow={true}
-                    color='primary'
-                    helperColor='secondary'
-                // visibleIcon={<UnLockIcon fill="currentColor" />}
-                // hiddenIcon={<LockIcon fill="currentColor" />}
+                    color="primary"
+                    labelPlaceholder="Password"
+                    helperColor='success'
+                    status='warning'
+                    className='font-bold '
+                    css={{ backgroundColor: '$neutralShadow', }}
+
                 />
                 <Button
                     css={{
-                        // color: '#ffffff',
-                        width: '25rem',
+                        color: '#ffffff',
+                        width: '100%',
                         fontSize: '1.1rem',
-                        // background: "background: rgb(131,58,180);
-                        // background: "$blue600",
-                    textGradient: "45deg, $blue600 -20%, $blue900 50%",
+                        background: "$yellow600",
+                        fontWeight: 'bold'
 
                     }}
-                >Submit</Button>
+                >
+                    Submit
+                </Button>
             </Card>
         </>
     )
