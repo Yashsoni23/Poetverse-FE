@@ -1,5 +1,5 @@
 'use client';
-import { Container, Row, Col, Text, Card, Button, Spacer } from '@nextui-org/react';
+import { Container, Row, Col, Text, Card, Button, Spacer, Image } from '@nextui-org/react';
 import useDarkMode from 'use-dark-mode';
 import Login from './login/page';
 import { useState } from 'react';
@@ -25,6 +25,7 @@ export default function Home() {
             display: "flex",
           },
         }} className='w-[50%] h-full'>
+         
 
         </Col>
         <Col css={{

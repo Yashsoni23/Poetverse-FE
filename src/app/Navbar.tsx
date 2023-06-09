@@ -1,5 +1,6 @@
 import { Button, Link, Navbar, Text } from '@nextui-org/react'
 import React from 'react'
+import Logo from './lib/PoetverseLogo';
 
 const NavbarComponent = () => {
     const collapseItems = [
@@ -22,6 +23,7 @@ const NavbarComponent = () => {
                 color: '$warning',
             }} variant={'sticky'} >
                 <Navbar.Brand>
+                    <Logo/>
                     Poetverse
                 </Navbar.Brand>
                 <Navbar.Toggle />
