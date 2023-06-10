@@ -256,7 +256,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <BiHomeCircle className='text-red-500 text-3xl mr-2 ' />
+                        <BiHomeCircle className='text-red-500 text-3xl xl:mr-2 ' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Home
                         </Text>
@@ -272,7 +272,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <BiSearch className='text-red-500 text-3xl mr-2' />
+                        <BiSearch className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Search
                         </Text>
@@ -287,7 +287,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <BsPlusSquare className='text-red-500 text-3xl mr-2' />
+                        <BsPlusSquare className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Upload
                         </Text>
@@ -302,7 +302,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <FiMail className='text-red-500 text-3xl mr-2' />
+                        <FiMail className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Messages
                         </Text>
@@ -317,7 +317,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <GiFeather className='text-red-500 text-3xl mr-2' />
+                        <GiFeather className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Write
                         </Text>
@@ -332,7 +332,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <IoMdNotificationsOutline className='text-red-500 text-3xl mr-2' />
+                        <IoMdNotificationsOutline className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Notification
                         </Text>
@@ -347,7 +347,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <IoBookmarkOutline className='text-red-500 text-3xl mr-2' />
+                        <IoBookmarkOutline className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Saved
                         </Text>
@@ -362,7 +362,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <AiOutlineSetting className='text-red-500 text-3xl mr-2' />
+                        <AiOutlineSetting className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Setting
                         </Text>
@@ -377,7 +377,7 @@ const NavbarComponent = () => {
                             cursor: 'pointer'
                         }
                     }}>
-                        <BiLogInCircle className='text-red-500 text-3xl mr-2' />
+                        <BiLogInCircle className='text-red-500 text-3xl xl:mr-2' />
                         <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                             Login / Signup
                         </Text>
