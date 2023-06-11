@@ -4,7 +4,9 @@ import useDarkMode from 'use-dark-mode';
 import Login from './login/page';
 import { useState } from 'react';
 import SignUp from './signup/page';
-import NavbarComponent from './Navbar';
+import NavbarComponent from './navbar/MobileNavbar';
+import RightSidebar from './navbar/RightSidebar';
+import LeftSidebar from './navbar/LeftSidebar';
 
 export default function Home() {
   const [alreadyUser, setAlreadyUser] = useState(true);
@@ -13,25 +15,25 @@ export default function Home() {
   return (
     <>
 
-      <NavbarComponent />
-      <Container alignContent='center' display='flex' direction='column' justify='center' css={{
+      {/* <NavbarComponent /> */}
+      {/* <Container alignContent='center' display='flex' direction='column' justify='center' css={{
         margin: 0
       }} className='bg-orange-50 w-screen h-screen ' >
         <Col css={{
           display: "none",
           margin: 0,
           "@md": {
-            width: "50%",
+            width: "max-content",
             display: "flex",
           },
         }} className='w-[50%] h-full'>
-         
+
 
         </Col>
         <Col css={{
           margin: 0,
           display: "flex",
-          width: "100%",
+          width: "max-content",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
@@ -73,8 +75,15 @@ export default function Home() {
           </Text>
         </Col>
 
-      </Container>
+        <RightSidebar />
+      </Container> */}
+      <Row>
 
+        <NavbarComponent />
+        <LeftSidebar />
+        {/* <RightSidebar /> */}
+        <RightSidebar />
+      </Row>
 
     </>
   )
