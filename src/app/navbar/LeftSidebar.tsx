@@ -35,10 +35,10 @@ const LeftSidebar = () => {
                 placeContent: 'normal',
                 left: '0',
                 '@smMin': {
-                    width: '10%',
+                    width: '8%',
                 },
                 '@mdMax': {
-                    width: '10%',
+                    width: '8%',
 
                 },
                 '@mdMin': {
@@ -46,7 +46,7 @@ const LeftSidebar = () => {
 
                 },
                 '@lg': {
-                    width: '25%',
+                    width: '24%',
                 },
                 '@xl': {
                     width: '30%',
@@ -112,6 +112,7 @@ const LeftSidebar = () => {
                             paddingRight: '$18',
                         },
                         '@lgMax': {
+                            // bgColor: 'rgba(255, 255, 255,1)',
                             gap: '$5',
                         },
                         '@mdMax': {
@@ -142,7 +143,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <BiHomeCircle className='text-red-500 text-3xl 2xl:mr-2 ' />
+                            <BiHomeCircle className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2 ' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Home
                             </Text>
@@ -158,7 +159,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <BiSearch className='text-red-500 text-3xl 2xl:mr-2' />
+                            <BiSearch className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Search
                             </Text>
@@ -173,7 +174,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <BsPlusSquare className='text-red-500 text-3xl 2xl:mr-2' />
+                            <BsPlusSquare className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Upload
                             </Text>
@@ -188,7 +189,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <FiMail className='text-red-500 text-3xl 2xl:mr-2' />
+                            <FiMail className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Messages
                             </Text>
@@ -203,7 +204,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <GiFeather className='text-red-500 text-3xl 2xl:mr-2' />
+                            <GiFeather className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Write
                             </Text>
@@ -218,7 +219,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <IoMdNotificationsOutline className='text-red-500 text-3xl 2xl:mr-2' />
+                            <IoMdNotificationsOutline className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Notification
                             </Text>
@@ -233,7 +234,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <IoBookmarkOutline className='text-red-500 text-3xl 2xl:mr-2' />
+                            <IoBookmarkOutline className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Saved
                             </Text>
@@ -248,7 +249,7 @@ const LeftSidebar = () => {
                                 cursor: 'pointer'
                             }
                         }}>
-                            <AiOutlineSetting className='text-red-500 text-3xl 2xl:mr-2' />
+                            <AiOutlineSetting className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Setting
                             </Text>
@@ -266,7 +267,7 @@ const LeftSidebar = () => {
                                 display: 'none'
                             }
                         }}>
-                            <BiLogInCircle className='text-red-500 text-3xl 2xl:mr-2 ' />
+                            <BiLogInCircle className='text-red-500 text-3xl max-xl:text-2xl 2xl:mr-2 ' />
                             <Text hideIn={'lg'} css={{ maxWidth: '100%', textGradient: '45deg, $yellow600 -20%, $red600 100%', fontWeight: '$medium' }}>
                                 Login / Signup
                             </Text>

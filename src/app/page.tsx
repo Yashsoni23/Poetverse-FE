@@ -7,6 +7,7 @@ import SignUp from './signup/page';
 import NavbarComponent from './navbar/MobileNavbar';
 import RightSidebar from './navbar/RightSidebar';
 import LeftSidebar from './navbar/LeftSidebar';
+import Deshboard from './home/page';
 
 export default function Home() {
   const [alreadyUser, setAlreadyUser] = useState(true);
@@ -77,13 +78,14 @@ export default function Home() {
 
         <RightSidebar />
       </Container> */}
-      <Row>
+      {/* <Row> */}
 
-        <NavbarComponent />
-        <LeftSidebar />
+        {/* <NavbarComponent /> */}
+        {/* <LeftSidebar /> */}
         {/* <RightSidebar /> */}
-        <RightSidebar />
-      </Row>
+        <Deshboard />
+        {/* <RightSidebar /> */}
+      {/* </Row> */}
 
     </>
   )

@@ -27,6 +27,7 @@ const RightSidebar = () => {
 
             {/* -------------------------------------------------------------Right Desktop Side Bar------------------------------------------------------------- */}
             <Container css={{
+                margin: 0,
                 backgroundColor: '$yellow200',
                 position: 'fixed',
                 width: '100%',
@@ -65,7 +66,6 @@ const RightSidebar = () => {
                     alignItems: 'flex-start',
                     justifyContent: 'flex-start',
                     paddingTop: '$5',
-                    paddingLeft: '$20',
                     gap: '$8',
                     position: 'absolute',
                     paddingBottom: '$6',
@@ -182,6 +182,14 @@ const RightSidebar = () => {
                         backgroundColor: '$yellow300',
                         '&::-webkit-scrollbar': {
                             display: 'none'
+                        },
+                        '@lg': {
+                            // paddingRight: '$18',
+                            height: '90%',
+                        },
+
+                        '@xl':{
+                            height:'95%'
                         }
                     }}>
 
