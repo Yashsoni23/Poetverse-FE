@@ -33,6 +33,7 @@ const LeftSidebar = () => {
                 width: '100%',
                 height: '100vh',
                 placeContent: 'normal',
+                borderRight: '1px solid $yellow500',
                 left: '0',
                 '@smMin': {
                     width: '8%',
@@ -57,7 +58,6 @@ const LeftSidebar = () => {
                 '@smMax': {
                     display: 'none',
                 }
-
 
 
             }}>

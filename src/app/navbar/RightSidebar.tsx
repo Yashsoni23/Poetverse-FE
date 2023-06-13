@@ -30,9 +30,11 @@ const RightSidebar = () => {
                 margin: 0,
                 backgroundColor: '$yellow200',
                 position: 'fixed',
+                zIndex: 100,
                 width: '100%',
                 height: '100vh',
                 placeContent:'end',
+                borderLeft: '1px solid $yellow500',
                 right: '0',
                 '@smMin': {
                     width: '40%',
