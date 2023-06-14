@@ -1,86 +1,66 @@
-import { Button, Card, Input, Text } from '@nextui-org/react'
-import React from 'react'
+'use client';
 
-type Props = {}
+import { Col, Spacer, Text ,Container} from '@nextui-org/react';
+import React, { useState } from 'react'
+import Login from '../utils/Login';
+import SignUp from '../utils/SignUp';
 
-const SignUp = (props: Props) => {
-    return (
-        <>
 
-            <Card
-            
-                css={{
-                    background: '$yellow300',
-                    width: 'max-content',
-                    padding: "$12",
-                    dflex: 'column',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gap: '$14',
-                    shadow: '$lg',
-                    borderColor: '$accents1',
-                  
-                }}
-                borderWeight={'bold'}                >
-                <Text
-                    h1
-                    css={{
-                        textGradient: "45deg, $yellow600 -20%, $red600 100%",
-                    }}
-                    weight="bold"
-                    size={20}
-                >Create New Account</Text>
-                <Input
-                    type='text'
-                    shadow={true}
-                    width='100%'
-                    color="primary"
-                    labelPlaceholder="Name"
-                    helperColor='success'
-                    clearable
-                    css={{ backgroundColor: '$neutralShadow'}}
-                    status='warning'
-                />
-                <Input
-                    type='email'
-                    shadow={true}
-                    width='100%'
-                    color="primary"
-                    labelPlaceholder="Email"
-                    helperColor='success'
-                    clearable
-                    css={{ backgroundColor: '$neutralShadow'}}
-                    status='warning'
-                    className='font-bold '
-                />
-                <Input.Password
-                    width='100%'
-                    type='password'
-                    shadow={true}
-                    color="primary"
-                    labelPlaceholder="Password"
-                    helperColor='success'
-                    status='warning'
-                    className='font-bold '
-                    css={{ backgroundColor: '$neutralShadow', }}
+const SignUpPage = () => {
+  const [alreadyUser, setAlreadyUser] = useState(false);
 
-                />
-                <Button
-                    css={{
-                        color: '#ffffff',
-                        width: '100%',
-                        fontSize: '1.1rem',
-                        background: "$yellow600",
-                        fontWeight: 'bold'
+  return (
+    <>
+      <div   className='bg-gradient-to-r from-red-100 via-yellow-100 to-red-50 w-screen h-screen flex justify-center items-center m-0'>
+      
+        <Col css={{
+          margin: 0,
+          display: "flex",
+          width: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+         
+        }} className='h-full'  >
 
-                    }}
-                >
-                    Submit
-                </Button>
-            </Card>
-        </>
-    )
+
+          {alreadyUser ? <Login /> : <SignUp />}
+          <Spacer y={1} />
+          <Text h5 css={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            fontSize: '$sm',
+            gap: 0,
+            '@md': {
+              fontSize: '$xl'
+            }
+          }} color='$accents8' >
+
+            You {alreadyUser ? "don't" : "already"} have an account ?
+            <Text css={{
+              display: 'flex',
+              // flexWrap: 'wrap',
+              textGradient: "45deg, $yellow600 -20%, $red600 100%",
+              paddingLeft: '$5',
+              cursor: "pointer",
+              '&:hover': {
+                textGradient: "45deg, $blue600 -20%, $pink600 100%",
+              },
+
+            }} weight={'extrabold'}
+              onClick={() => setAlreadyUser(!alreadyUser)}
+            >
+              {alreadyUser ? "Sign Up" : "Login"}
+            </Text>
+          </Text>
+        </Col>
+      </div>
+      
+
+    
+    </>
+  )
 }
 
-export default SignUp
+export default SignUpPage

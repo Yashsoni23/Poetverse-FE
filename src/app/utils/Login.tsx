@@ -1,12 +1,12 @@
 'use client';
 
-import { Card, Text ,Input,Button} from '@nextui-org/react'
+import { Card, Text, Input, Button } from '@nextui-org/react'
 import React from 'react'
 
 const Login = () => {
-  return (
-    <>
-     <Card
+    return (
+        <>
+            <Card
                 css={{
                     background: '$yellow300',
                     width: 'max-content',
@@ -17,7 +17,8 @@ const Login = () => {
                     alignItems: 'center',
                     gap: '$14',
                     shadow: '$lg',
-                    borderColor: '$accents1'
+                    borderColor: '$accents1',
+
                 }}
                 borderWeight={'bold'}                >
                 <Text
@@ -65,8 +66,8 @@ const Login = () => {
                     Submit
                 </Button>
             </Card>
-    </>
-  )
+        </>
+    )
 }
 
 export default Login

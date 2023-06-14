@@ -1,3 +1,5 @@
+'use client';
+
 import { Col, Container, Row } from '@nextui-org/react'
 import React from 'react'
 import RightSidebar from '../navbar/RightSidebar'
@@ -72,6 +74,9 @@ const Deshboard = () => {
                             >Following</Col>
                         </Row>
                     </Col>
+                    <Poetry />
+                    <Poetry />
+                    <Poetry />
                     <Poetry />
 
                 </div>
